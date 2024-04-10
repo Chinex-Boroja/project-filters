@@ -19,6 +19,7 @@ public interface ProjectRepository extends CrudRepository<Project, Long> {
             "OR c.firstName LIKE  :lookupText " +
             "OR c.lastName LIKE :lookupText " +
             "OR c.phoneNumber LIKE :lookupText " +
+            "OR c.email LIKE :lookupText " +
             "AND ((:startDate IS NULL AND :endDate IS NULL) OR " +
             "(p.startDate <= :endDate AND p.endDate >= :startDate))")
 

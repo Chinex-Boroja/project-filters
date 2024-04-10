@@ -17,7 +17,7 @@ public class Contributor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
+    @Column(name = "ID")
     private Long id;
     private String firstName;
     private String lastName;
